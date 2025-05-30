@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sifariş Ləğvi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: #ffffff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #d9534f;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .details th,
+        .details td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sifariş Ləğv Edildi</h1>
+        <p>Hörmətli {{UserName}},</p>
+        <p>Sizin <strong>{{Number}}</strong> nömrəli sifariş, səbətdə 15 dəqiqədən çox qaldığı üçün avtomatik olaraq
+            ləğv edilmişdir. Bu müddət ərzində ekspertin vaxtı bron edildiyi üçün sifariş davam etdirilə bilmədi.</p>
+
+        <div class="details">
+            <h2>Sifariş Məlumatları</h2>
+            <table>
+                <tr>
+                    <th>Sifariş Nömrəsi</th>
+                    <td>{{Number}}</td>
+                </tr>
+                <tr>
+                    <th>Sifariş Tarixi</th>
+                    <td>{{Date}}</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>Ləğv Edildi</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Əgər əlavə sualınız varsa və ya yeni randevu sifarişi vermək istəyirsinizsə, yenidən cəhd edin və 15 dəqiqə
+            içərisində ödənişi yekunlaşdırın.</p>
+
+        <p class="footer">Bu e-poçt avtomatik olaraq göndərilmişdir. Xahiş edirik, cavablandırmayın.</p>
+    </div>
+</body>
+
+</html>

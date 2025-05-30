@@ -1,0 +1,13 @@
+{
+    "messages": [
+        {
+            "destinations": [
+                {
+                    "to": "{{to}}"
+                }
+            ],
+            "from": "SİNAPSMED",
+            "text": "{{text}}"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "order": {
+        "typeRid": "Order_SMS",
+        "amount": "{{amount}}",
+        "currency": "AZN",
+        "language": "az",
+        "description": "{{description}}",
+        "hppRedirectUrl": "{{hppRedirectUrl}}",
+        "hppCofCapturePurposes": ["Cit"]
+    }
+}
