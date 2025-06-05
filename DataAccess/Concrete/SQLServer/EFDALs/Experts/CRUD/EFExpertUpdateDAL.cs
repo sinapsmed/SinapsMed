@@ -53,7 +53,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Experts.CRUD
                 return new ErrorResult(_dalLocalizer["expertNotFound"], HttpStatusCode.NotFound, "Expert id is invalid or crashed");
 
             var servicePeriod = expert.ServicePeriods.FirstOrDefault(sp => sp.Id == periodGet.PeriodId);
-            
+
             if (servicePeriod == null)
                 return new ErrorResult(_dalLocalizer["servicePeriodNotFound"], HttpStatusCode.NotFound, "Service period not found");
 
@@ -157,6 +157,8 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Experts.CRUD
             string firstName = expert.FullName;
 
             expert.FullName = update.FullName;
+            expert.PhoneNumber = update.PhoneNumber;
+            expert.ShowPhone = update.ShowPhone;
             expert.Boosted = update.IsBoosted;
             expert.PhotoUrl = update.PhotoUrl;
             expert.IsSuspend = update.IsSuspend;

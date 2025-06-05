@@ -10,6 +10,7 @@ namespace Entities.DTOs.AppointmentsDtos.Body
         public string UnikalKey { get; set; }
         public DateTime Date { get; set; }
         public double Price { get; set; }
+        public string? ExpertPhone { get; set; }
         public virtual string ExpertName { get; set; }
         public virtual string ExpertImageUrl { get; set; }
     }

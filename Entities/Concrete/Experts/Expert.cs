@@ -17,6 +17,8 @@ namespace Entities.Concrete.Experts
         public byte Fee { get; set; }
         public string PhotoUrl { get; set; }
         public string FullName { get; set; }
+        public string? PhoneNumber { get; set; }
+        public bool ShowPhone { get; set; }
         public string? RefleshToken { get; set; }
         [EmailAddress]
         public string Email { get; set; }

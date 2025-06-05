@@ -31,6 +31,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Users
             return c => new UserAppointment
             {
                 Id = c.Id,
+                ExpertPhone = c.Expert.ShowPhone ? c.Expert.PhoneNumber : null,
                 Date = c.Date,
                 ExpertName = $"{c.Expert.Specality} {c.Expert.FullName}",
                 ExpertImageUrl = c.Expert.PhotoUrl,

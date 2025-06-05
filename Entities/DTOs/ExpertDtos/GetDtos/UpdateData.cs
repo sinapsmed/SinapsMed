@@ -10,6 +10,8 @@ namespace Entities.DTOs.ExpertDtos.GetDtos
         public string Resume { get; set; }
         public bool IsSuspend { get; set; }
         public bool IsBoosted { get; set; }
+        public string? PhoneNumber { get; set; }
+        public bool ShowPhone { get; set; }
         public bool IsActive { get; set; }
         public byte Fee { get; set; }
         public string Specality { get; set; }

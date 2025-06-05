@@ -228,6 +228,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
                 var meetLinkService = await _google.CreateScheduledMeet(
                     new List<EventAttendee> {
                         new EventAttendee { Email = appointment.User.Email},
+                        new EventAttendee { Email = appointment.Expert.Email}
                     }, appointment.Date, appointment.Date.AddMinutes(appointment.ServicePeriod.Duration), $"{appointment.Expert.FullName} ilə görüş", appointment.Expert.Email);
 
                 var meetLink = meetLinkService.Data;
@@ -254,6 +255,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
                     .Replace("{{UserWhatsApp}}", appointment.UserWhatsApp)
                     .Replace("{{ExpertName}}", appointment.Expert.FullName)
                     .Replace("{{MeetLink}}", meetLink)
+                    .Replace("{{phoneNum}}", appointment.Expert.ShowPhone ? appointment.Expert.PhoneNumber : "")
                     .Replace("{{ExpertEmail}}", appointment.Expert.Email);
 
 
