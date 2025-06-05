@@ -150,7 +150,7 @@
     <comment/>
   </data>
   <data name="verificationBody" xml:space="preserve">
-    <value>Sizin verifikasiya kodunuz : {0} \nBu kodun istifadə müddəti {1} dəqiqədir.</value>
+    <value>Sizin verifikasiya kodunuz : {0} Bu kodun istifadə müddəti {1} dəqiqədir.</value>
     <comment/>
   </data>
   <data name="forgetText" xml:space="preserve">

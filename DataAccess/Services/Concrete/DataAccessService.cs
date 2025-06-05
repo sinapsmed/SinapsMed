@@ -332,6 +332,8 @@ namespace DataAccess.Services
             string Username = _config["SMS:UserName"];
             string ApiKey = _config["SMS:ApiKey"];
             string SenderName = _config["SMS:Sender"];
+            string responseContent = "";
+
             using (var client = new HttpClient())
             {
                 try
@@ -344,11 +346,17 @@ namespace DataAccess.Services
                                         $"&text={Uri.EscapeDataString(text)}";
 
                     HttpResponseMessage response = await client.GetAsync(requestUrl);
-                    response.EnsureSuccessStatusCode();
 
-                    string responseContent = await response.Content.ReadAsStringAsync();
+                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+                    var bytes = await response.Content.ReadAsByteArrayAsync();
+                    var encoding = Encoding.GetEncoding("Windows-1252");
+                    responseContent = encoding.GetString(bytes);
 
                     var parts = responseContent.Split('&');
+
+                    System.Console.WriteLine(responseContent);
+
                     foreach (var part in parts)
                     {
                         var keyValue = part.Split('=');
@@ -358,6 +366,15 @@ namespace DataAccess.Services
                         }
                     }
 
+
+                    return false;
+                }
+                catch
+                {
+                    return false;
+                }
+                finally
+                {
                     using (var context = new AppDbContext())
                     {
                         var log = new Log
@@ -374,16 +391,10 @@ namespace DataAccess.Services
                             StackTrace = "/DataAccesService/",
                             Path = ""
                         };
-                        await context.Set<Log>().AddAsync(log);
+                        await context.Logs.AddAsync(log);
 
                         await context.SaveChangesAsync();
                     }
-
-                    return false;
-                }
-                catch
-                {
-                    return false;
                 }
             }
         }

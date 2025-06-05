@@ -150,7 +150,7 @@
     <comment/>
   </data>
   <data name="verificationBody" xml:space="preserve">
-    <value>Doğrulama kodunuz: {0} \nBu kod {1} dakika süreyle geçerlidir.</value>
+    <value>Doğrulama kodunuz: {0} Bu kod {1} dakika süreyle geçerlidir.</value>
     <comment/>
   </data>
   <data name="forgetText" xml:space="preserve">
