@@ -47,7 +47,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Analyses.CRUD
                 return await _repo.AddAsync(analysis, context);
             }
         }
-        
+
 
         public override async Task<IResult> AddCat(CreateCategory createCategory)
         {
@@ -79,11 +79,12 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Analyses.CRUD
                     fileStream.Flush();
                 }
 
-                BackgroundJob.Enqueue(() => ProcessExcelFile(fileName, agentMail));
+                BackgroundJob.Enqueue<EFAnalysisCreateDAL>(x => x.ProcessExcelFile(fileName, agentMail));
 
                 return new SuccessResult(_dalLocalizer["jobStarted"]);
             }
         }
+        [Queue("low")]
         public async Task ProcessExcelFile(string fileName, string agentMail)
         {
             using (var context = new AppDbContext())

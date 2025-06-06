@@ -1,6 +1,5 @@
 using System.Linq.Expressions;
 using System.Net;
-using AutoMapper;
 using Core.DataAccess;
 using Core.Helpers.Abstract;
 using Core.Utilities.Results.Abstract;
@@ -12,8 +11,6 @@ using DataAccess.Concrete.SQLServer.DataBase;
 using DataAccess.Exceptions.Global;
 using DataAccess.Services.Abstract;
 using Entities.Concrete.Admin;
-using Entities.Concrete.Emails;
-using Entities.Concrete.Experts;
 using Entities.DTOs.Admin;
 using Entities.DTOs.AuthDtos;
 using Entities.Enums;

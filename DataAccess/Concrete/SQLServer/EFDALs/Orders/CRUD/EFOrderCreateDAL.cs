@@ -112,7 +112,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Orders.CRUD
 
                 return new SuccessDataResult<RedirectionDto>(paymentResponse.Message, paymentResponse.StatusCode);
             }
-            
+
             await _context.SaveChangesAsync();
 
             return redUrl;
@@ -214,14 +214,14 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Orders.CRUD
                     CreatedAt = order.CreatedAt,
                     UserId = order.UserId,
                     Items = orderItemDtos
-                }; 
+                };
                 if (payment.Cupon is not null)
                 {
-                    BackgroundJob.Enqueue(() => _cuponUpdateDAL.UseCupon(user.Id, payment.Cupon, payment.Amount));
+                    BackgroundJob.Enqueue<EFCuponUpdateDAL>(x => x.UseCupon(user.Id, payment.Cupon, payment.Amount));
                 }
 
-                BackgroundJob.Enqueue(() => SendInvoice(orderDto, user.FullName, user.Email));
-                BackgroundJob.Enqueue(() => _basketDeleteDAL.RemoveAll(user.Id));
+                BackgroundJob.Enqueue<EFOrderCreateDAL>(x => x.SendInvoice(orderDto, user.FullName, user.Email));
+                BackgroundJob.Enqueue<EFBasketDeleteDAL>(x => x.RemoveAll(user.Id));
 
                 var apointmentIds = order.Items
                     .Where(c => c.Type is ItemType.Appointment && c.AppointmentId is not null)
@@ -233,7 +233,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Orders.CRUD
                     .ToList();
 
                 if (apointmentIds.Count > 0)
-                    BackgroundJob.Enqueue(() => _appointment.AppointmentsPaid(apointmentIds));
+                    BackgroundJob.Enqueue<EFAppointmentCreateDAL>(x => x.AppointmentsPaid(apointmentIds));
 
                 foreach (var item in order.Items)
                 {
@@ -299,6 +299,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Orders.CRUD
             }
         }
 
+        [Queue("high")]
         public async Task SendInvoice(OrderDto order, string user, string email)
         {
             var url = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Templates", "invoice.html");

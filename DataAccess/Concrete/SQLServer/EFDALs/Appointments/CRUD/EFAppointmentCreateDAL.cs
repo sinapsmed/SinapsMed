@@ -161,7 +161,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
             if (!bron.Success)
                 return bron;
 
-            BackgroundJob.Enqueue(() => WaitPatment(appointment.Id));
+            BackgroundJob.Enqueue<EFAppointmentCreateDAL>(x => x.WaitPatment(appointment.Id));
 
             return new SuccessResult();
         }
@@ -187,6 +187,8 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
             return new SuccessResult();
         }
 
+
+        [Queue("high")]
         public async Task AppointmentsPaid(List<PaymentVerifiedForAppointment> payments)
         {
             foreach (var payment in payments)
@@ -263,6 +265,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
             }
         }
 
+        [Queue("high")]
         public async Task WaitPatment(Guid appointmentId)
         {
             await Task.Delay(TimeSpan.FromMinutes(15));

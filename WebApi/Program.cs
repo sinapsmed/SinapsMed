@@ -192,7 +192,12 @@ app.UseHangfireDashboard("/hangfire", new DashboardOptions
     Authorization = new[] { new AuthService() }
 });
 
-app.UseHangfireServer();
+#pragma warning disable CS0618 // Type or member is obsolete
+app.UseHangfireServer(new BackgroundJobServerOptions
+{
+    Queues = new[] { "low", "high", "email" }
+});
+#pragma warning restore CS0618 // Type or member is obsolete
 
 app.UseAuthentication();
 app.UseAuthorization();

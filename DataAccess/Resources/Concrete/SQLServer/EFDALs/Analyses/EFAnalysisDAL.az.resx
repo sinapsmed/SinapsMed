@@ -129,4 +129,8 @@
     <value>Analiz kateqoriyası tapılmadı</value>
     <comment/>
   </data>
+  <data name="notFound" xml:space="preserve">
+    <value>Randevu tapılmadı</value>
+    <comment/>
+  </data>
 </root>
