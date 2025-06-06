@@ -33,19 +33,19 @@ namespace Core.Helpers.Concrete
         }
         public async Task<IResult> SendEmailAsync(string to, string subject, string body, string from, string? attachmentPath)
         {
-            BackgroundJob.Enqueue(() => SendEmailJobAsync(new List<string> { to }, subject, body, from));
+            BackgroundJob.Enqueue<EmailManager>(x => x.SendEmailJobAsync(new List<string> { to }, subject, body, from));
 
             return new SuccessResult();
         }
-
 
         public async Task<IResult> SendBulkEmailAsync(List<string> to, string subject, string body, string from, string? attachment = null)
         {
-            BackgroundJob.Enqueue(() => SendEmailJobAsync(to, subject, body, from));
+            BackgroundJob.Enqueue<EmailManager>(x => x.SendEmailJobAsync(to, subject, body, from));
 
             return new SuccessResult();
         }
 
+        [Queue("email")]
         public async Task SendEmailJobAsync(List<string> to, string subject, string body, string from)
         {
             using var client = new AmazonSimpleEmailServiceClient(_accessKey, _secretKey, _region);
@@ -73,7 +73,7 @@ namespace Core.Helpers.Concrete
                     }
                 }
             };
- 
+
             var response = await client.SendEmailAsync(sendRequest);
         }
 

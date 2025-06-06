@@ -5,6 +5,7 @@ using Core.Utilities.Results.Concrete.SuccessResult;
 using DataAccess.Concrete.SQLServer.DataBase;
 using Entities.Concrete.CuponCodes;
 using Entities.DTOs.CuponDtos;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 
@@ -16,6 +17,8 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Cupons.CRUD
         {
         }
 
+
+        [Queue("high")]
         public override async Task<IResult> UseCupon(string userId, string code, double amount)
         {
             var user = await _context.Users.FirstOrDefaultAsync(c => c.Id == userId);

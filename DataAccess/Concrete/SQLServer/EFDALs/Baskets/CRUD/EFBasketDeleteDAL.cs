@@ -4,6 +4,7 @@ using Core.Utilities.Results.Concrete.ErrorResult;
 using Core.Utilities.Results.Concrete.SuccessResult;
 using DataAccess.Concrete.SQLServer.DataBase;
 using Entities.Concrete.BasketEntities;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 
@@ -39,6 +40,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Baskets.CRUD
             return new SuccessResult();
         }
 
+        [Queue("high")]
         public override async Task<IResult> RemoveAll(string userId)
         {
             var user = await _context.Users

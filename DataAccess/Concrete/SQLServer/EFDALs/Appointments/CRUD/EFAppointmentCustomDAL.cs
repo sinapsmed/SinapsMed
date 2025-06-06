@@ -26,10 +26,10 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
 
         public async override Task<IResult> UploadDiagnostics(string fileName)
         {
-            if(await _context.Set<Diagnosis>().AnyAsync())
+            if (await _context.Set<Diagnosis>().AnyAsync())
                 return new ErrorResult(_dalLocalizer["alreadyUploaded"]);
 
-            BackgroundJob.Enqueue(() => UploadBackgorundTask(fileName));
+            BackgroundJob.Enqueue<EFAppointmentCustomDAL>(x => x.UploadBackgorundTask(fileName));
 
             return new SuccessResult("Backgorund Job Has been started");
         }
@@ -59,6 +59,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
             return new SuccessResult();
         }
 
+        [Queue("low")]
         public async Task UploadBackgorundTask(string fileName)
         {
             await using var transaction = await _context.Database.BeginTransactionAsync();
