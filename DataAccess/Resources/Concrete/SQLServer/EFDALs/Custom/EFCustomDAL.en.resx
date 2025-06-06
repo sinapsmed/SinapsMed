@@ -117,16 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="apoCancel" xml:space="preserve">
-    <value>{0} Tarixi üçün səbətə yerləşdirdiyiniz randevu ləğv edilmişdir. Randevular ödəniş edilmədikdə sadəcə 15 dəqiqə üçün səbətdə qalır və vaxt bron edilir.</value>
+  <data name="succesSend" xml:space="preserve">
+    <value>Your message has been successfully forwarded!</value>
     <comment/>
   </data>
-  <data name="apoCancelSub" xml:space="preserve">
-    <value>Randevu Ləğv edildi</value>
-    <comment/>
-  </data>
-  <data name="apoMeetJoin" xml:space="preserve">
-    <value>Görüş : </value>
+  <data name="notFound" xml:space="preserve">
+    <value>Not found</value>
     <comment/>
   </data>
 </root>

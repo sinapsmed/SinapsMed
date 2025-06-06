@@ -70,6 +70,8 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Baskets.CRUD
 
                 if (cuponCode is not null && cuponCode.UsedCupons.Count() < cuponCode.UseLimit && (cuponCode.SpesficCuponUsers.Any(c => c.UserId == userId) || cuponCode.SpesficCuponUsers.Count == 0))
                 {
+
+                    //burdanda sual ola biler
                     if (cuponCode.ExpiredAt <= DateTime.UtcNow && cuponCode.StartAt >= DateTime.UtcNow)
                     {
                         return new SuccessDataResult<List<MyBasketItem>>(data, _dalLocalizer["expiredCode"], HttpStatusCode.OK);

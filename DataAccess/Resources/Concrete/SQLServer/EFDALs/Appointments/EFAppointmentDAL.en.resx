@@ -117,12 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="notFound" xml:space="preserve">
+    <value>Appointment not found</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="anamnezFormAlreadyExists " xml:space="preserve">
+    <value>Anamnesis form already exists</value>
+    <comment/>
+  </data>
+  <data name="anamnezFormAdded" xml:space="preserve">
+    <value>Anamnesis form added</value>
+    <comment/>
+  </data>
+  <data name="userNotFound " xml:space="preserve">
+    <value>User not found</value>
+    <comment/>
+  </data>
+  <data name="expertNotFound " xml:space="preserve">
+    <value>Expert not found</value>
+    <comment/>
+  </data>
+  <data name="expertBronedTime" xml:space="preserve">
+    <value>The expert’s selected time is already booked</value>
+    <comment/>
+  </data>
+  <data name="servicePeriodNotFound " xml:space="preserve">
+    <value>Service period not found</value>
+    <comment/>
+  </data>
+  <data name="additionalUserNull " xml:space="preserve">
+    <value>Additional user cannot be null</value>
+    <comment/>
+  </data>
+  <data name="apoNotFound" xml:space="preserve">
+    <value>Appointment  with key {0} not found</value>
+    <comment/>
+  </data>
+  <data name="reservedTime " xml:space="preserve">
+    <value>The selected time is already reserved</value>
+    <comment/>
+  </data>
+  <data name="alreadyUploaded" xml:space="preserve">
+    <value>Already uploaded	</value>
+    <comment/>
+  </data>
+  <data name="backgroundJobStarted" xml:space="preserve">
+    <value>Background job has been started	</value>
+    <comment/>
+  </data>
+  <data name="apoMeetJoin" xml:space="preserve">
+    <value>Join Appointment</value>
     <comment/>
   </data>
 </root>

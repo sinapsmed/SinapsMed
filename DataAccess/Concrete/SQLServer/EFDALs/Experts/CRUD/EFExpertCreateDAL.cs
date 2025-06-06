@@ -49,7 +49,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Experts.CRUD
         public override async Task<IResult> AddExpert(Create create)
         {
             if (await _context.Experts.AnyAsync(c => c.Email.ToLower() == create.Email.ToLower()))
-                return new ErrorResult(_dalLocalizer["emailAlreadyUsed", create.Email.ToLower()], HttpStatusCode.BadRequest, $"Email already used in diffrend acconut");
+                return new ErrorResult(_dalLocalizer["emailAlreadyUsed", create.Email.ToLower()], HttpStatusCode.BadRequest, $"Email already used in diffrend account");
 
             string password = _service.GeneratePasswrod();
 

@@ -40,7 +40,7 @@ namespace DataAccess.Concrete.SQLServer.DataBase
 
                 var configuration = builder.Build();
 
-                var connectionString = configuration["ConnectionStrings:Default"];
+                var connectionString = configuration["ConnectionStrings:Default"]; 
 
                 optionsBuilder.UseNpgsql(connectionString);
             }

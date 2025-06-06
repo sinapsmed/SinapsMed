@@ -14,7 +14,8 @@ using WebApi.Services.HangfireService;
 using WebApi.Services.Swagger;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
-
+var test = Path.Combine(Directory.GetCurrentDirectory(), "..",".env");
+DotNetEnv.Env.Load(test);
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services

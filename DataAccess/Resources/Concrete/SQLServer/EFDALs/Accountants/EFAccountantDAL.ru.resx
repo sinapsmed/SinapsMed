@@ -117,24 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="mailText" xml:space="preserve">
-    <value>Sayın {0}, sinapsmed.com ailesine hoş geldiniz. Artık platformamızın imkanlarından faydalanarak istediğiniz gün ve saatlere uygun çalışabilirsiniz.</value>
+  <data name="paymentNotFound" xml:space="preserve">
+    <value>Платёж не найден.</value>
     <comment/>
   </data>
-  <data name="mailThanks" xml:space="preserve">
-    <value>Bize güvendiğiniz için teşekkür ederiz. Saygılar, Sinapsmed ekibi.</value>
+  <data name="AccountantNotFound" xml:space="preserve">
+    <value>Бухгалтер не найден.</value>
     <comment/>
   </data>
-  <data name="mailPassword" xml:space="preserve">
-    <value>Şifreniz  : {0}</value>
+  <data name="oldPasswordNotMatch " xml:space="preserve">
+    <value>Старый пароль не совпадает.</value>
     <comment/>
   </data>
-  <data name="mail" xml:space="preserve">
-    <value>Hoş Geldiniz !</value>
-    <comment/>
-  </data>
-  <data name="emailAlreadyUsed" xml:space="preserve">
-    <value>{0} zaten kullanılan bir e-posta.</value>
+  <data name="oldPasswordRequired" xml:space="preserve">
+    <value>Старый пароль обязателен.</value>
     <comment/>
   </data>
 </root>

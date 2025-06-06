@@ -258,7 +258,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Appointments.CRUD
                     .Replace("{{phoneNum}}", appointment.Expert.ShowPhone ? appointment.Expert.PhoneNumber : "")
                     .Replace("{{ExpertEmail}}", appointment.Expert.Email);
 
-
+//bunu saxladim
                 await _email.SendBulkEmailAsync(new List<string> { appointment.User.Email, appointment.Expert.Email }, _dalLocalizer["apoConfirmSub"], fileContent);
             }
         }

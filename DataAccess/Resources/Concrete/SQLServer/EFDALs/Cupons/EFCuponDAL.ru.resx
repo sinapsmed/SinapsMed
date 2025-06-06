@@ -117,12 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="alreadyExsist " xml:space="preserve">
+    <value>Этот купон уже существует</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="notFound " xml:space="preserve">
+    <value>Купон не найден</value>
+    <comment/>
+  </data>
+  <data name="usedCuponCantDelete" xml:space="preserve">
+    <value>Использованный купон нельзя удалить</value>
+    <comment/>
+  </data>
+  <data name="activeCupon " xml:space="preserve">
+    <value>Активный купон</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>Лимит использования купона для этого пользователя достигнут</value>
+    <comment/>
+  </data>
+  <data name="expiredCupon" xml:space="preserve">
+    <value>Срок действия купона истек</value>
+    <comment/>
+  </data>
+  <data name="unAuthorized" xml:space="preserve">
+    <value>Несанкционированный доступ</value>
+    <comment/>
+  </data>
+  <data name="userNotFound" xml:space="preserve">
+    <value>Пользователь не найден</value>
+    <comment/>
+  </data>
+  <data name="limitReached" xml:space="preserve">
+    <value>Достигнут лимит</value>
     <comment/>
   </data>
 </root>

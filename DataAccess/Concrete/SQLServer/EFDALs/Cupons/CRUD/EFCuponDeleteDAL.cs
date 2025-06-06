@@ -27,7 +27,7 @@ namespace DataAccess.Concrete.SQLServer.EFDALs.Cupons.CRUD
                 return new ErrorResult(_dalLocalizer["notFound"], HttpStatusCode.NotFound);
 
             if (querry.UsedCupons.Count() > 0)
-                return new ErrorResult(_dalLocalizer["usedCuponCantDelte"], HttpStatusCode.BadRequest);
+                return new ErrorResult(_dalLocalizer["usedCuponCantDelete"], HttpStatusCode.BadRequest);
 
             if (querry.IsActive)
                 return new ErrorResult(_dalLocalizer["activeCupon"], HttpStatusCode.BadRequest);

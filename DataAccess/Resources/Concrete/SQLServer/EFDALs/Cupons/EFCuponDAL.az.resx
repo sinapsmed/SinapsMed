@@ -117,8 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="apoMeetJoin" xml:space="preserve">
-    <value>Встреча с : </value>
+  <data name="alreadyExsist " xml:space="preserve">
+    <value>Bu kupon artıq mövcuddur</value>
+    <comment/>
+  </data>
+  <data name="notFound" xml:space="preserve">
+    <value>Kupon tapılmadı</value>
+    <comment/>
+  </data>
+  <data name="usedCuponCantDelete" xml:space="preserve">
+    <value>İstifadə olunmuş kupon silinə bilməz</value>
+    <comment/>
+  </data>
+  <data name="activeCupon" xml:space="preserve">
+    <value>Aktiv kupon</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>Bu istifadəçi üçün kupon istifadə limiti dolmuşdur</value>
+    <comment/>
+  </data>
+  <data name="expiredCupon" xml:space="preserve">
+    <value>Kuponun vaxtı keçib</value>
+    <comment/>
+  </data>
+  <data name="unAuthorized" xml:space="preserve">
+    <value>İcazəsiz giriş</value>
+    <comment/>
+  </data>
+  <data name="userNotFound" xml:space="preserve">
+    <value>İstifadəçi tapılmadı</value>
+    <comment/>
+  </data>
+  <data name="limitReached" xml:space="preserve">
+    <value>Limitə çatılıb</value>
     <comment/>
   </data>
 </root>

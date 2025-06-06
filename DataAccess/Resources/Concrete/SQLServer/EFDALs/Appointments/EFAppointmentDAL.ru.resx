@@ -117,12 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="notFound" xml:space="preserve">
+    <value>Назначение не найдено</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="anamnezFormAlreadyExists " xml:space="preserve">
+    <value>Форма анамнеза уже существует</value>
+    <comment/>
+  </data>
+  <data name="anamnezFormAdded" xml:space="preserve">
+    <value>Форма анамнеза добавлена</value>
+    <comment/>
+  </data>
+  <data name="userNotFound " xml:space="preserve">
+    <value>Пользователь не найден</value>
+    <comment/>
+  </data>
+  <data name="expertNotFound " xml:space="preserve">
+    <value>Эксперт не найден</value>
+    <comment/>
+  </data>
+  <data name="expertBronedTime" xml:space="preserve">
+    <value>Выбранное время эксперта уже занято</value>
+    <comment/>
+  </data>
+  <data name="servicePeriodNotFound " xml:space="preserve">
+    <value>Период услуги не найден</value>
+    <comment/>
+  </data>
+  <data name="additionalUserNull " xml:space="preserve">
+    <value>Дополнительный пользователь не может быть пустым</value>
+    <comment/>
+  </data>
+  <data name="apoNotFound " xml:space="preserve">
+    <value>Встреча с ключом {0} не найдена</value>
+    <comment/>
+  </data>
+  <data name="reservedTime " xml:space="preserve">
+    <value>Выбранное время уже занято</value>
+    <comment/>
+  </data>
+  <data name="alreadyUploaded" xml:space="preserve">
+    <value>Уже загружено</value>
+    <comment/>
+  </data>
+  <data name="backgroundJobStarted" xml:space="preserve">
+    <value>Фоновая задача запущена</value>
+    <comment/>
+  </data>
+  <data name="apoMeetJoin" xml:space="preserve">
+    <value>Присоединиться к встрече</value>
     <comment/>
   </data>
 </root>

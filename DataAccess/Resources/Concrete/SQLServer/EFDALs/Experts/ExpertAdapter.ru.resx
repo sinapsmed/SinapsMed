@@ -117,12 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="mailText" xml:space="preserve">
+    <value>Уважаемый(ая) {0}, добро пожаловать в семью sinapsmed.com. Теперь вы можете использовать возможности нашей платформы, чтобы работать в удобные для вас дни и часы.</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="mailThanks" xml:space="preserve">
+    <value>Спасибо, что доверяете нам. С уважением, команда Sinapsmed.</value>
+    <comment/>
+  </data>
+  <data name="mailPassword" xml:space="preserve">
+    <value>Ваш пароль: {0}</value>
+    <comment/>
+  </data>
+  <data name="mail" xml:space="preserve">
+    <value>Добро пожаловать!</value>
+    <comment/>
+  </data>
+  <data name="emailAlreadyUsed" xml:space="preserve">
+    <value>{0} уже использован(а)!</value>
     <comment/>
   </data>
 </root>

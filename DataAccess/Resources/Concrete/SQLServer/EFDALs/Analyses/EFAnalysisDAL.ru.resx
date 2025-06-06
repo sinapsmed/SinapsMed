@@ -117,12 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="jobStarted" xml:space="preserve">
+    <value>Задание запущено</value>
     <comment/>
   </data>
   <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+    <value>Анализ не найден</value>
+    <comment/>
+  </data>
+  <data name="notFoundCat " xml:space="preserve">
+    <value>Категория анализа не найдена</value>
     <comment/>
   </data>
 </root>

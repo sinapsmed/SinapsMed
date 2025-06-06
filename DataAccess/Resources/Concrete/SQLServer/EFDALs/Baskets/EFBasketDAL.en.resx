@@ -117,8 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="apoMeetJoin" xml:space="preserve">
-    <value>Meet with : </value>
+  <data name="userNotFound" xml:space="preserve">
+    <value>User not found</value>
+    <comment/>
+  </data>
+  <data name="shouldOneServiceAdded" xml:space="preserve">
+    <value>At least one service must be selected</value>
+    <comment/>
+  </data>
+  <data name="analysisNotFound" xml:space="preserve">
+    <value>Analysis not found</value>
+    <comment/>
+  </data>
+  <data name="itemNotFound" xml:space="preserve">
+    <value>Item not found in the cart</value>
+    <comment/>
+  </data>
+  <data name="expiredCode" xml:space="preserve">
+    <value>The entered code has expired</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>User limit has been reached</value>
+    <comment/>
+  </data>
+  <data name="cuponUsed" xml:space="preserve">
+    <value>Coupon has already been used	</value>
+    <comment/>
+  </data>
+  <data name="succesUsing" xml:space="preserve">
+    <value>Successfully used	</value>
+    <comment/>
+  </data>
+  <data name="invalidCode" xml:space="preserve">
+    <value>Invalid code</value>
+    <comment/>
+  </data>
+  <data name="invalidCount" xml:space="preserve">
+    <value>Invalid count</value>
     <comment/>
   </data>
 </root>

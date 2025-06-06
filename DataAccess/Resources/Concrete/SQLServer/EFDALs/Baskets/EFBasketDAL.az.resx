@@ -117,12 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="userNotFound" xml:space="preserve">
+    <value>İstifadəçi tapılmadı</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="shouldOneServiceAdded   " xml:space="preserve">
+    <value>Bir xidmət mütləq seçilməlidir</value>
+    <comment/>
+  </data>
+  <data name="analysisCategoryNotFound " xml:space="preserve">
+    <value>Analiz tapılmadı</value>
+    <comment/>
+  </data>
+  <data name="itemNotFound" xml:space="preserve">
+    <value>Səbətdə məhsul tapılmadı</value>
+    <comment/>
+  </data>
+  <data name="expiredCode" xml:space="preserve">
+    <value>Daxil edilən kodun vaxtı bitmişdir</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>İstifadəçi limiti çatıb</value>
+    <comment/>
+  </data>
+  <data name="cuponUsed" xml:space="preserve">
+    <value>Kupon artıq istifadə olunub	</value>
+    <comment/>
+  </data>
+  <data name="succesUsing&#x9;" xml:space="preserve">
+    <value>Uğurla istifadə edildi	</value>
+    <comment/>
+  </data>
+  <data name="invalidCode" xml:space="preserve">
+    <value>Yanlış/kod etibarsızdır</value>
+    <comment/>
+  </data>
+  <data name="invalidCount" xml:space="preserve">
+    <value>Yanlış say</value>
     <comment/>
   </data>
 </root>

@@ -117,12 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="paymentNotFound" xml:space="preserve">
+    <value>Payment not found.</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="AccountantNotFound" xml:space="preserve">
+    <value>Accountant not found.</value>
+    <comment/>
+  </data>
+  <data name="oldPasswordNotMatch " xml:space="preserve">
+    <value>Old password does not match.</value>
+    <comment/>
+  </data>
+  <data name="oldPasswordRequired" xml:space="preserve">
+    <value>Old password is required.</value>
     <comment/>
   </data>
 </root>

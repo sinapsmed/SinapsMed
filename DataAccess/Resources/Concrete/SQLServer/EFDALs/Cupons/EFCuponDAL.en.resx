@@ -117,12 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="alreadyExsist " xml:space="preserve">
+    <value>This coupon already exists</value>
     <comment/>
   </data>
   <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+    <value>Coupon not found</value>
+    <comment/>
+  </data>
+  <data name="usedCuponCantDelete" xml:space="preserve">
+    <value>Used coupon cannot be deleted</value>
+    <comment/>
+  </data>
+  <data name="activeCupon " xml:space="preserve">
+    <value>Active coupon</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>Coupon usage limit reached for this user</value>
+    <comment/>
+  </data>
+  <data name="expiredCupon" xml:space="preserve">
+    <value>Coupon has expired</value>
+    <comment/>
+  </data>
+  <data name="unAuthorized" xml:space="preserve">
+    <value>Unauthorized access</value>
+    <comment/>
+  </data>
+  <data name="userNotFound" xml:space="preserve">
+    <value>User not found</value>
+    <comment/>
+  </data>
+  <data name="limitReached" xml:space="preserve">
+    <value>Limit reached</value>
     <comment/>
   </data>
 </root>

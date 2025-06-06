@@ -117,12 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="notFound " xml:space="preserve">
+    <value>Expert not found</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="commentNotFound" xml:space="preserve">
+    <value>Comment not found</value>
+    <comment/>
+  </data>
+  <data name="unAuth" xml:space="preserve">
+    <value>Unauthorized access</value>
+    <comment/>
+  </data>
+  <data name="prohibited" xml:space="preserve">
+    <value>This action is prohibited</value>
+    <comment/>
+  </data>
+  <data name="categoryNotFound" xml:space="preserve">
+    <value>Category not found</value>
+    <comment/>
+  </data>
+  <data name="onlyExpertCanUpdate" xml:space="preserve">
+    <value>Only expert can perform this action</value>
     <comment/>
   </data>
 </root>

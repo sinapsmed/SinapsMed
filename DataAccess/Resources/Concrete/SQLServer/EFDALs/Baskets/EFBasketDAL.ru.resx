@@ -117,12 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="userNotFound" xml:space="preserve">
+    <value>Пользователь не найден</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="shouldOneServiceAdded" xml:space="preserve">
+    <value>Необходимо выбрать хотя бы одну услугу</value>
+    <comment/>
+  </data>
+  <data name="analysisNotFound" xml:space="preserve">
+    <value>Анализ не найден</value>
+    <comment/>
+  </data>
+  <data name="itemNotFound" xml:space="preserve">
+    <value>Товар не найден в корзине</value>
+    <comment/>
+  </data>
+  <data name="expiredCode" xml:space="preserve">
+    <value>Введённый код истёк</value>
+    <comment/>
+  </data>
+  <data name="userLimitReached" xml:space="preserve">
+    <value>Достигнут лимит пользователя</value>
+    <comment/>
+  </data>
+  <data name="cuponUsed&#x9;" xml:space="preserve">
+    <value>Купон уже был использован</value>
+    <comment/>
+  </data>
+  <data name="succesUsing&#x9;" xml:space="preserve">
+    <value>Успешно использовано</value>
+    <comment/>
+  </data>
+  <data name="invalidCode" xml:space="preserve">
+    <value>Неверный код</value>
+    <comment/>
+  </data>
+  <data name="invalidCount" xml:space="preserve">
+    <value>Неверное количество</value>
     <comment/>
   </data>
 </root>

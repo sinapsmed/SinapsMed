@@ -117,12 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="succesSend" xml:space="preserve">
-    <value>Mesajınız uğurla yönləndirildi !</value>
+  <data name="identity" xml:space="preserve">
+    <value>Gönderilen bilgilerin hatalı olduğu görülüyor.</value>
     <comment/>
   </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Tapılmadı</value>
+  <data name="mail" xml:space="preserve">
+    <value>Yeni Şifreniz</value>
+    <comment/>
+  </data>
+  <data name="registerSucces" xml:space="preserve">
+    <value>Tebrikler, başarıyla Kayıt Oldunuz</value>
+    <comment/>
+  </data>
+  <data name="unAuth" xml:space="preserve">
+    <value>Kullanıcı bulunamadı Lütfen tekrar deneyin</value>
+    <comment/>
+  </data>
+  <data name="wrongPassword" xml:space="preserve">
+    <value>E-posta veya şifre yanlış, doğru girildiğinden emin olun</value>
+    <comment/>
+  </data>
+  <data name="mailPassword" xml:space="preserve">
+    <value>Sizin şifreniz : {0}</value>
+    <comment/>
+  </data>
+  <data name="mailText" xml:space="preserve">
+    <value>Sinapsmed sizi Selamlıyor, profilinizden şifrenizi istediğiniz zaman değiştirebilirsiniz. Daha fazla desteğe ihtiyacınız varsa lütfen info@sinapsmed.com adresinden bize bildirin. </value>
+    <comment/>
+  </data>
+  <data name="mailThanks" xml:space="preserve">
+    <value>Bize güvendiğiniz için teşekkür ederiz. Saygılar, Sinapsmed ekibi.</value>
+    <comment/>
+  </data>
+  <data name="verificationBody" xml:space="preserve">
+    <value>Doğrulama kodunuz: {0} Bu kod {1} dakika süreyle geçerlidir.</value>
+    <comment/>
+  </data>
+  <data name="forgetText" xml:space="preserve">
+    <value>Hesap şifrenizi güncellemek için aşağıdaki bağlantıyı kullanabilirsiniz. Eğer siz talep etmediyseniz, görmezden gelin. Bağlantının geçerlilik süresi 10 dakikadır.</value>
     <comment/>
   </data>
 </root>
