@@ -137,4 +137,48 @@
     <value>{0} artıq istifadə olunub !</value>
     <comment/>
   </data>
+  <data name="pauseAlreadyAdded" xml:space="preserve">
+    <value>Fasilə artıq əlavə olunub.</value>
+    <comment/>
+  </data>
+  <data name="expertNotFound" xml:space="preserve">
+    <value>Mütəxəsis tapılmadı.</value>
+    <comment/>
+  </data>
+  <data name="holidayAlreadyAdded" xml:space="preserve">
+    <value>Tatil artıq əlavə olunub: {0}</value>
+    <comment/>
+  </data>
+  <data name="periodAlreadyAdded" xml:space="preserve">
+    <value>Dövr artıq əlavə olunub.</value>
+    <comment/>
+  </data>
+  <data name="periodNotFound" xml:space="preserve">
+    <value>Dövr tapılmadı.</value>
+    <comment/>
+  </data>
+  <data name="serviceNotFound" xml:space="preserve">
+    <value>Xidmət tapılmadı.</value>
+    <comment/>
+  </data>
+  <data name="specalityNotFound" xml:space="preserve">
+    <value>Mütəxəsisin ixtisası tapılmadı.</value>
+    <comment/>
+  </data>
+  <data name="notFound" xml:space="preserve">
+    <value>Tapılmadı</value>
+    <comment/>
+  </data>
+  <data name="expertHasApointment" xml:space="preserve">
+    <value>Mütəxəsisin artıq təyinatı var.</value>
+    <comment/>
+  </data>
+  <data name="servicePeriodNotFound" xml:space="preserve">
+    <value>Xidmət dövrü tapılmadı.</value>
+    <comment/>
+  </data>
+  <data name="gapTimeError" xml:space="preserve">
+    <value>Aralıq vaxtı 10 dəqiqədən çox olmalıdır.</value>
+    <comment/>
+  </data>
 </root>

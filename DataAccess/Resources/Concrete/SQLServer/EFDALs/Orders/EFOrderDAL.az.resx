@@ -117,68 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="mailText" xml:space="preserve">
-    <value>Уважаемый(ая) {0}, добро пожаловать в семью sinapsmed.com. Теперь вы можете использовать возможности нашей платформы, чтобы работать в удобные для вас дни и часы.</value>
+  <data name="totalAmountError" xml:space="preserve">
+    <value>Toplam məbləğ düzgün hesablanmadı.</value>
     <comment/>
   </data>
-  <data name="mailThanks" xml:space="preserve">
-    <value>Спасибо, что доверяете нам. С уважением, команда Sinapsmed.</value>
+  <data name="userNotFound" xml:space="preserve">
+    <value>İstifadəçi tapılmadı.</value>
     <comment/>
   </data>
-  <data name="mailPassword" xml:space="preserve">
-    <value>Ваш пароль: {0}</value>
+  <data name="paymentNotFound" xml:space="preserve">
+    <value>Ödəniş tapılmadı.</value>
     <comment/>
   </data>
-  <data name="mail" xml:space="preserve">
-    <value>Добро пожаловать!</value>
-    <comment/>
-  </data>
-  <data name="emailAlreadyUsed" xml:space="preserve">
-    <value>{0} уже использован(а)!</value>
-    <comment/>
-  </data>
-  <data name="pauseAlreadyAdded" xml:space="preserve">
-    <value>Пауза уже добавлена.</value>
-    <comment/>
-  </data>
-  <data name="expertNotFound" xml:space="preserve">
-    <value>Эксперт не найден.</value>
-    <comment/>
-  </data>
-  <data name="holidayAlreadyAdded" xml:space="preserve">
-    <value>Праздник уже добавлен: {0}</value>
-    <comment/>
-  </data>
-  <data name="periodAlreadyAdded" xml:space="preserve">
-    <value>Период уже добавлен.</value>
-    <comment/>
-  </data>
-  <data name="periodNotFound" xml:space="preserve">
-    <value>Период не найден.</value>
-    <comment/>
-  </data>
-  <data name="serviceNotFound" xml:space="preserve">
-    <value>Сервис не найден.</value>
-    <comment/>
-  </data>
-  <data name="specalityNotFound" xml:space="preserve">
-    <value>Специализация эксперта не найдена</value>
+  <data name="paymentprocess" xml:space="preserve">
+    <value>Ödəniş prosesinin vəziyyəti: {0}</value>
     <comment/>
   </data>
   <data name="notFound" xml:space="preserve">
-    <value>Не найдено.</value>
+    <value>Qeyd tapılmadı.</value>
     <comment/>
   </data>
-  <data name="expertHasApointment" xml:space="preserve">
-    <value>У эксперта уже есть назначение.</value>
+  <data name="success" xml:space="preserve">
+    <value>Əməliyyat uğurla tamamlandı.</value>
     <comment/>
   </data>
-  <data name="servicePeriodNotFound" xml:space="preserve">
-    <value>Период обслуживания не найден.</value>
-    <comment/>
-  </data>
-  <data name="gapTimeError" xml:space="preserve">
-    <value>Интервал должен быть больше 10 минут.</value>
+  <data name="unAuth" xml:space="preserve">
+    <value>Səlahiyyətsiz giriş.</value>
     <comment/>
   </data>
 </root>

@@ -117,68 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="mailText" xml:space="preserve">
-    <value>Уважаемый(ая) {0}, добро пожаловать в семью sinapsmed.com. Теперь вы можете использовать возможности нашей платформы, чтобы работать в удобные для вас дни и часы.</value>
+  <data name="locationParse" xml:space="preserve">
+    <value>Məkan məlumatı ayrılmadı.</value>
     <comment/>
   </data>
-  <data name="mailThanks" xml:space="preserve">
-    <value>Спасибо, что доверяете нам. С уважением, команда Sinapsmed.</value>
+  <data name="emailNotFound" xml:space="preserve">
+    <value>Email tapılmadı.</value>
     <comment/>
   </data>
-  <data name="mailPassword" xml:space="preserve">
-    <value>Ваш пароль: {0}</value>
+  <data name="notFoundCl" xml:space="preserve">
+    <value>Klinika tapılmadı</value>
     <comment/>
   </data>
-  <data name="mail" xml:space="preserve">
-    <value>Добро пожаловать!</value>
+  <data name="notFoundC" xml:space="preserve">
+    <value>Şəhər tapılmadı.</value>
     <comment/>
   </data>
-  <data name="emailAlreadyUsed" xml:space="preserve">
-    <value>{0} уже использован(а)!</value>
+  <data name="notFoundR" xml:space="preserve">
+    <value>Region tapılmadı.</value>
     <comment/>
   </data>
-  <data name="pauseAlreadyAdded" xml:space="preserve">
-    <value>Пауза уже добавлена.</value>
+  <data name="regionHasVillages" xml:space="preserve">
+    <value>Regiona bağlı kəndlər var, silmək olmaz.</value>
     <comment/>
   </data>
-  <data name="expertNotFound" xml:space="preserve">
-    <value>Эксперт не найден.</value>
+  <data name="notFoundV" xml:space="preserve">
+    <value>Kənd tapılmadı.</value>
     <comment/>
   </data>
-  <data name="holidayAlreadyAdded" xml:space="preserve">
-    <value>Праздник уже добавлен: {0}</value>
-    <comment/>
-  </data>
-  <data name="periodAlreadyAdded" xml:space="preserve">
-    <value>Период уже добавлен.</value>
-    <comment/>
-  </data>
-  <data name="periodNotFound" xml:space="preserve">
-    <value>Период не найден.</value>
-    <comment/>
-  </data>
-  <data name="serviceNotFound" xml:space="preserve">
-    <value>Сервис не найден.</value>
-    <comment/>
-  </data>
-  <data name="specalityNotFound" xml:space="preserve">
-    <value>Специализация эксперта не найдена</value>
-    <comment/>
-  </data>
-  <data name="notFound" xml:space="preserve">
-    <value>Не найдено.</value>
-    <comment/>
-  </data>
-  <data name="expertHasApointment" xml:space="preserve">
-    <value>У эксперта уже есть назначение.</value>
-    <comment/>
-  </data>
-  <data name="servicePeriodNotFound" xml:space="preserve">
-    <value>Период обслуживания не найден.</value>
-    <comment/>
-  </data>
-  <data name="gapTimeError" xml:space="preserve">
-    <value>Интервал должен быть больше 10 минут.</value>
+  <data name="villageHasClinics" xml:space="preserve">
+    <value>Kəndə bağlı kliniklər var, silmək olmaz.</value>
     <comment/>
   </data>
 </root>
